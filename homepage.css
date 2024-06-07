@@ -1,0 +1,86 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1f2029;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+}
+
+.card {
+  padding: 20px;
+  background-color: #2b2e38;
+  border: 5px solid #ffeba7;
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffeba7;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border: #2b2e38 solid 2px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+button:hover {
+  background-color: #2b2e38;
+  border: #ffeba7 solid 2px;
+  color: #000;
+  color: white;
+  transition: all ease-in-out 0.3s;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#eyeIcon {
+  cursor: pointer;
+  color: #ffeba7;
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+#jokeText,
+#jokeSetup,
+#jokePunchline {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+#memeImage {
+  display: none;
+  width: 300px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: fit; /* Ensures the image covers the area without distortion */
+  margin: 10px auto; /* Center the image horizontally and add some spacing */
+}
+
+.eye-icon-container {
+  text-align: center; /* Center the eye icon */
+  margin-top: 10px; /* Space between the text and the icon */
+}
+
+#logout:hover {
+  color: #ffeba7;
+}

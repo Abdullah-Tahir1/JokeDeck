@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JokeDeck</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="shortcut icon" href="./Assests/logo.png" type="image/x-icon" />
+    <script type="module" src="login.js"></script>
+  </head>
+  <body>
+    <h1>
+      Hey, <span id="loggedUserFName"></span>!
+      <i id="logout" class="fa-solid fa-right-from-bracket"></i>
+    </h1>
+    <p>Here's to great laughs</p>
+    <div class="card">
+      <p id="jokeSetup"></p>
+      <div class="eye-icon-container">
+        <i
+          id="eyeIcon"
+          class="fa-regular fa-eye"
+          onclick="showPunchline()"
+          style="display: none"
+        ></i>
+      </div>
+      <p id="jokePunchline" style="display: none"></p>
+      <a href="" id="memeLink" download>
+        <img
+          id="memeImage"
+          src=""
+          alt="Meme"
+          style="display: none; cursor: pointer"
+        />
+      </a>
+      <div class="button-container">
+        <button onclick="fetchJoke()">Tell me a joke</button>
+        <button onclick="fetchChuckNorrisJoke()">Tell me Chuck Norris</button>
+        <button onclick="fetchMeme()">Reveal a Meme</button>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/0a4b2b96a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="homepage.js"></script>
+</html>
